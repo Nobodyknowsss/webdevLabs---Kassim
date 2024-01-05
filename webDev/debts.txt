@@ -1,0 +1,7 @@
+debts
+manaf: 121
+shee: 232
+selena: 530
+lylia: 120
+khufra: 201
+martis: 343

@@ -1,0 +1,77 @@
+<!-- lab202.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loan Application Form</title>
+    <style>
+      body {
+        background-color: #f0f0f0; /* Light gray background color */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      form {
+        background-color: #ffffff; /* White background color for the form */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 16px;
+        box-sizing: border-box;
+      }
+
+      button {
+        background-color: #4caf50; /* Green submit button */
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #45a049; /* Darker green on hover */
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/apply-loan-success" method="POST">
+      <h1>Loan Application Form</h1>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" required />
+
+      <label for="phone">Phone:</label>
+      <input type="text" id="phone" name="phone" required />
+
+      <label for="loan_amount">Loan Amount:</label>
+      <input type="text" id="loan_amount" name="loan_amount" required />
+
+      <label for="reason">Reason:</label>
+      <textarea id="reason" name="reason" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
